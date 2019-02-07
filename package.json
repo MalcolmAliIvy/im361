@@ -1,0 +1,26 @@
+{
+  "name": "im361web",
+  "version": "1.0.0",
+  "description": "The second part of class",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MalcolmAliIvy/im361web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MalcolmAliIvy/im361web/issues"
+  },
+  "homepage": "https://github.com/MalcolmAliIvy/im361web#readme",
+  "dependencies": {
+    "vue": "^2.6.3"
+  },
+  "devDependencies": {
+    "webpack": "^4.29.2",
+    "webpack-cli": "^3.2.3"
+  }
+}
