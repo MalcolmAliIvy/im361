@@ -6,9 +6,25 @@
 var app = new Vue({
   el: '#app',
   data: {
-    message: 'Hello Vue!', 
-    counter: 0
+    
+
+
+function functionTranslate() {
+  var x = document.getElementById("englishDiv");
+  if (x.innerHTML === "Hello") {
+    x.innerHTML = "Hola";
+  } else {
+    x.innerHTML = "Hello";
+  }
+}
+
+
+
+
   }
 });
+
+
+
 
 window.app = app;
