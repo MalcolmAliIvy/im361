@@ -4,7 +4,8 @@
   "description": "The second part of class",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,8 @@
     "vue": "^2.6.3"
   },
   "devDependencies": {
+    "css-loader": "^2.1.0",
+    "style-loader": "^0.23.1",
     "webpack": "^4.29.2",
     "webpack-cli": "^3.2.3"
   }
