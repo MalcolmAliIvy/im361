@@ -1,0 +1,56 @@
+* {
+  color: black;
+
+  font-size: 40px;
+  font-family:arial;
+
+
+  button {
+  	background-color: green;
+   }
+
+}
+
+
+nav{
+   	font-size: 30px;
+   	color:#094615;}
+
+
+h1{
+	color:#0db5bb;
+	font-size: 50px;
+
+}
+
+h2{
+	background-color:#0db5bb;
+	color:white;
+	text-align: center;
+}
+
+button {
+  	background-color:#094615;
+  	color:white;
+   }
+
+
+.vocab{   	
+   	font-size: 100px;
+   	text-align: center;
+   
+}
+
+
+.subt {
+	text-align:center;
+	color:#858a86;
+	font-size:25px;
+	padding-bottom: 1px;
+
+}
+
+.rightb {
+	float: right;
+
+}
