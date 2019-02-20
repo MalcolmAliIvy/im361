@@ -34,6 +34,7 @@ button {
 .vocab{     
     font-size: 100px;
     text-align: center;
+
    
 }
 
@@ -42,7 +43,7 @@ button {
   text-align:center;
   color:#858a86;
   font-size:25px;
-  padding-bottom: 1px;
+ 
 
 }
 
@@ -54,15 +55,195 @@ button {
 
 
 
-/*.leftb1{
-  float:right ; 
+
+
+/*This the the Css for both of the pages on one file the second page (the menu ) on the bottom \/, & the first page (cards) up top /\*/
+
+
+
+
+* {
+  color: black;
+
+  font-size: 40px;
+  font-family:arial;
 
 
 }
 
-.rightb1{
 
-}*/
+nav{
+    font-size: 30px;
+    color:#094615;}
+
+
+h1{
+  color:#0db5bb;
+  font-size: 50px;
+
+}
+
+h2{
+  background-color:#0db5bb;
+  color:white;
+  text-align: center;
+}
+
+button {
+    background-color:#094615;
+    color:white;
+   }
+
+
+.vocab{     
+    font-size: 100px;
+    text-align: center;
+
+   
+}
+
+
+.subt {
+  text-align:center;
+  color:#858a86;
+  font-size:25px;
+ 
+
+}
+
+.rightb {
+  float: right;
+
+}
+
+.btn {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 35px;
+  margin: 4px 2px;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.btn:hover {
+  background-color: #094615;
+  color: white;
+}
+
+/*
+bjbjbjb
+*/
+
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+ /* padding: 16px;*/
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+
+
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.dropdown-content {
+  display: none;
+  /*position: absolute;*/
+  right: 0;
+  background-color: #DBFFFF;
+  /*min-width: 160px;*/
+  /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  /*padding: 12px 16px;*/
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  width:100%;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+*/
+ /*.page1{
+
+  float:left;
+ }
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
