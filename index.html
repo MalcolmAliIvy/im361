@@ -6,34 +6,13 @@
     <title>My Vue  Project</title>
   </head>
   <body>
-    
-
-<!-- 	This was the added stuff that is below is not working -->
-<!-- 	This was the added stuff that is below is not working -->
-<!-- 	This was the added stuff that is below is not working -->
-<!-- 	This was the added stuff that is below is not working -->
-<main v-bind:hidden="pageName != 'home'">
-	 <!-- 	This was the added stuff that is above is not working -->
-<!-- 	This was the added stuff that is above is not working -->
-<!-- 	This was the added stuff that is above is not working -->
-<!-- 	This was the added stuff that is above is not working -->
-	<header> 
-
-<link rel="stylesheet" type="text/css" href="mainmenu.css">
-
-
-
-<p class="nav"> Profile: Malcolm ALi Ivy</p> 
-
-<h1> Menu </h1>
-<h2> French 01 </h2>
-
-</header>
-
-<main>
- 
- 
-
+    <div id="app">
+	<header>
+		<p class="nav"> Profile: Malcolm ALi Ivy</p> 
+		<h1> Menu </h1>
+		<h2> French 01 </h2>
+	</header>
+	<main v-bind:hidden="pageName != 'home'">
 <div class="dropdown">
   <button class="btn"> Lesson</button>
   <div class="dropdown-content">
@@ -45,18 +24,10 @@
   </div>
 </div>
 
-
 <div class="dropdown">
-<!-- 	This was the added stuff that is below is not working -->
-<!-- 	This was the added stuff that is below is not working -->
-<!-- 	This was the added stuff that is below is not working -->
-<!-- 	This was the added stuff that is below is not working -->
 
-  <button v-onclick="pageName = 'cards'" class="btn"> Cards</button>
-  <!-- 	This was the added stuff that is above is not working -->
-<!-- 	This was the added stuff that is above is not working -->
-<!-- 	This was the added stuff that is above is not working -->
-<!-- 	This was the added stuff that is above is not working -->
+  <button v-on:click="pageName = 'cards'" class="btn"> Cards</button>
+  
   <div class="dropdown-content">
   <p> Lesson 1 <br/>
   <u> Vocabulary words</u> <br/>
@@ -82,88 +53,41 @@
   </div>
 </div>
 
-
-
-
-
-
-<!-- <button class="btn"> Lesson  </button> <br/>
-
- <button class="btn"> Cards  </button>  <br/>
- <button class="btn"> Quiz  </button>   <br/>  
- <button class="btn"> Test </button>   <br/>
- -->
-<!-- 
-<p class= "vocab"> IL = He</p>
-
-<p class= "subt" >(Translation)</p>
-
- -->
-
-
 </main>
 
 
-
-
-
-
-
-
-<!-- 	This was the added stuff that is below is not working -->
-<!-- 	This was the added stuff that is below is not working -->
-<!-- 	This was the added stuff that is below is not working -->
-<!-- 	This was the added stuff that is below is not working -->
 <main v-bind:hidden="pageName != 'cards'">
- <!-- 	This was the added stuff that is above is not working -->
-<!-- 	This was the added stuff that is above is not working -->
-<!-- 	This was the added stuff that is above is not working -->
-<!-- 	This was the added stuff that is above is not working -->
 
 
-button class="nav"> < Menu </button> 
+<button class="nav"> &lt; Menu </button> 
 
 <h1> Pronoun Cards </h1>
 <h2> Cards 2/3 </h2>
 
-</header>
-
-<main>
-
 
 <p class= "vocab"> IL = He</p>
 
 <p class= "subt" >(Translation)</p>
 
-<button> < Previous </button>
+<button> &lt; Previous </button>
 <button class= "rightb" >  Next > </button>
-
-</main>
-
-
 
 
 <button > Translate </button>
 
-
-
 <button class= "rightb" >  Audio </button>
+</main>
 
+    <script src="dist/main.js" type="text/javascript">
+    	
+    </script>
+</div>
 
-
-
-
-
-    <script src="dist/main.js" type="text/javascript"></script>
   </body>
 </html>
 
 
 
-
-
-
-</main>
 
 
 

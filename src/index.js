@@ -7,8 +7,7 @@ var app = new Vue({
   el: '#app',
   data: {
 
-
-  	pagename: "cards"
+  	pageName: "home"
     
          
    
