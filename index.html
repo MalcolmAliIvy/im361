@@ -41,7 +41,7 @@
 </div>
 
 <div class="dropdown">
-  <button class="btn"> Quiz</button>
+  <button class="btn" v-on:click="pageName = 'quiz'" > Quiz</button>
   <div class="dropdown-content">
   <p> Quiz <br/>
   "Quizes cover some of the material that you have olready went over in lesson 1."  </p>
@@ -62,23 +62,31 @@
 <main v-bind:hidden="pageName != 'cards'">
 
 
-<button class="nav"> &lt; Menu </button> 
+<button v-on:click="pageName = 'home'" class="nav"> &lt; Menu </button> 
 
 <h1> Pronoun Cards </h1>
-<h2> Cards 2/3 </h2>
+<h2> Cards {{ cardnumber }}/{{cardcount}}</h2>
 
 
-<p class= "vocab"> IL = He</p>
+<p class= "vocab"> {{term}} </p>
 
 <p class= "subt" >(Translation)</p>
 
-<button> &lt; Previous </button>
-<button class= "rightb" >  Next > </button>
+<button v-on:click="scroll(-1)"> &lt; Previous </button>
+<button class= "rightb" v-on:click="scroll(1)" >  Next &gt; </button>
 
 
 <button > Translate </button>
 
 <button class= "rightb" >  Audio </button>
+</main>
+
+<main v-bind:hidden="pageName != 'quiz'">
+
+
+<button v-on:click="pageName = 'home'" class="nav"> &lt; Menu </button> 
+
+<h1> quiz </h1>
 </main>
 
     <script src="dist/main.js" type="text/javascript">
