@@ -9,37 +9,31 @@
     <div id="app">
 	<header>
 	</header>
+	<!-- This is Home page and the first page. where the user can choose the different options to de insode the application. -->
 	<main v-bind:hidden="pageName != 'home'">
 
 <p class="nav"> Profile: Malcolm ALi Ivy</p> 
 		<h1> Menu </h1>
 		<h2> French 01 </h2>
-
-
 <div class="dropdown">
   <button class="btn"> Lesson</button>
   <div class="dropdown-content">
   <p> Lesson 1 <br/> <u>Pronouns</u> <br/> - What Is A Pronoun ?<br/> 
   	- The Key To Understanding French Pronouns<br/>
   	- French Stress Pronouns
-
   </p>
   </div>
 </div>
-
+<!-- The different bottons to choose from in order to navigatete app with descriptions. -->
 <div class="dropdown">
-
   <button v-on:click="pageName = 'cards'" class="btn"> Cards</button>
-  
   <div class="dropdown-content">
   <p> Lesson 1 <br/>
   <u> Vocabulary words</u> <br/>
   "These are the words you chose to revew for later."
-
    </p>
   </div>
 </div>
-
 <div class="dropdown">
   <button class="btn" v-on:click="pageName = 'quiz'" > Quiz</button>
   <div class="dropdown-content">
@@ -47,7 +41,6 @@
   "Quizes cover some of the material that you have olready went over in lesson 1."  </p>
   </div>
 </div>
-
 <div class="dropdown">
   <button class="btn"> Test</button>
   <div class="dropdown-content">
@@ -55,45 +48,38 @@
   "This section reviewes the entire chapter/ lesson as a whole." </p>
   </div>
 </div>
-
 </main>
-
-
+<!-- This is the second page / the vocab cards section, where the different words can be swipped through for study or review. -->
 <main v-bind:hidden="pageName != 'cards'">
-
-
-<button v-on:click="pageName = 'home'" class="nav"> &lt; Menu </button> 
-
-<h1> Pronoun Cards </h1>
-<h2> Cards {{ cardnumber }}/{{cardcount}}</h2>
-
-
-<p class= "vocab"> {{term}} </p>
-
-<p class= "subt" >(Translation)</p>
-
-<button v-on:click="scroll(-1)"> &lt; Previous </button>
-<button class= "rightb" v-on:click="scroll(1)" >  Next &gt; </button>
-
-
-<button > Translate </button>
-
-<button class= "rightb" >  Audio </button>
+  <button v-on:click="pageName = 'home'" class="nav"> &lt; Menu </button> 
+  <h1> Pronoun Cards </h1>
+  <!-- This section is the card counter where it tells the user exactly which cars they are on at the moment, this is also editable on how ay cars can be added in the JS file. -->
+  <h2> Cards {{ cardnumber }}/{{cardcount}}</h2>
+  <p class= "vocab"> {{term}} </p>
+  <p class= "subt" >(Translation)</p>
+  <button v-on:click="scroll(-1)"> &lt; Previous </button>
+  <button class= "rightb" v-on:click="scroll(1)" >  Next &gt; </button>
+  <button > Translate </button>
+  <button class= "rightb" >  Audio </button>
 </main>
-
+<!-- The last section is the Quiz section where the user is able to re-visit the content from the other cards page. -->
 <main v-bind:hidden="pageName != 'quiz'">
-
-
-<button v-on:click="pageName = 'home'" class="nav"> &lt; Menu </button> 
-
-<h1> quiz </h1>
+  <button v-on:click="pageName = 'home'" class="nav"> &lt; Menu </button> 
+  <h1> French Quiz 1 </h1>
+  <h2> Question  {{quiznumber}}/{{quizcount}} </h2>
+ <!--  <button> Next </button> -->
+  <button class= "rightb" v-on:click="swipe(1)" >  Next &gt; </button>
+  <p class= "vocab"> {{quizquestion}} </p>
+  <h3 v-if= "DisplayCorrectAnswer"> Correct </h3>
+  <!-- this correct answer function alaows the " correct answer" to be chosed in regards to the appropriate quiz question -->
+  <button class="btn"v-on:click="correctanswer(1)"> I</button>
+  <button class="btn"v-on:click="correctanswer(2)"> IL</button>
+  <button class="btn"v-on:click="correctanswer(3)"> Tu</button>
+  <button class="btn"v-on:click="correctanswer(4)"> J'ai</button>
 </main>
-
-    <script src="dist/main.js" type="text/javascript">
-    	
+    <script src="dist/main.js" type="text/javascript">	
     </script>
 </div>
-
   </body>
 </html>
 
